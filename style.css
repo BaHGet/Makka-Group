@@ -97,6 +97,8 @@ body{
     will-change: opacity, visibility;
 }
 
+
+
 .item{
     background-color: white;
     align-items:center;
@@ -130,6 +132,12 @@ body{
     content:'EGP';
     position: absolute;
     font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    .item-name{
+        font-size: 26px;
+    }
 }
 
 
