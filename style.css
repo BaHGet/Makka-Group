@@ -1,4 +1,4 @@
-body {
+body{
     padding: 0;
     margin: 0;
     width: 100%;
@@ -10,53 +10,115 @@ body {
     position: sticky;
     background-color: #e7e4e4;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     width: 100%;
     top: 0.5px;
     height:auto;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     z-index:999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+    will-change: opacity, visibility;
 }
 .header-logo{
-    width: 110px;
-    height:60px;
+    width: 163px;
+    height:86px;
 }
+
 .logo-text{
     display: inline-block;
-    padding: 0px 10px 0px 0px ;
+    padding: 0px 26px 0px 0px ;
     margin:0;
     font-size: 26px;
     font-family: 'Noto Nastaliq Urdu', serif;
 }
 
+.logo-text::after{
+    content: 'للمنظفات الصناعية';
+    position: relative;
+    font-size: 20px;
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    transition-property:background-color, color ;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #adacac;
+    color: black;
+}
+
+
 .main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .7s ease-in-out;
+    will-change: opacity, visibility;
 }
 
 .item{
     background-color: white;
-    padding-top: 90px;
     align-items:center;
-    width: 80%;
-    height: 890px;
+    width: auto;
+    height: 786px;
     margin: auto;
-    margin: 5px auto 5px auto ;
-    box-shadow: 0px 0px 10px;
+    margin: 20px auto 20px auto ;
+
 }
 
 .item-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .item-name{
     text-align: center;
     overflow: hidden;
     margin-left:auto;
-    font-size: 16px;
+    font-size: 46px;
 }
 
 .item-price{
@@ -75,5 +137,80 @@ footer{
     display: block;
     background-color:black;
     height:100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+    will-change: opacity, visibility;
 }
 
+.right-page-btn{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: -8px;
+    top: 454px;
+    z-index: 999;
+}
+
+.right-page-btn a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    background-image: url("https://static.thenounproject.com/png/1256404-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:80px;
+    transition-property:box-shadow ;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.right-page-btn a:hover{
+    box-shadow: 0px 0px 10px;
+}
+
+
+.left-page-btn{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 3px;
+    top: 454px;
+    z-index: 999;
+}
+
+
+.left-page-btn a {
+    rotate: 180deg;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    background-image: url("https://static.thenounproject.com/png/1256404-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:80px;
+    transition-property:box-shadow ;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.left-page-btn a:hover{
+    rotate: 180deg;
+    box-shadow: 0px 0px 10px;
+}
+
+/* Scrollbar behavior */
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar {
+    background: transparent;
+}

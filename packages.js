@@ -1,35 +1,20 @@
-
-
+let header;
 let mainContainer;
-let itemsContainer = [];
+let footer;
 const itemsDb = 
     [
         {
             id :0,
-            name: 'Brilliant Touch Shower Gel With Moisturizer And BLUEBERRY Scent 1000ml',
-            src:"https://m.media-amazon.com/images/I/61BfdZUOKdL._AC_UL320_.jpg",
+            name: 'Laptops',
+            src: "https://images-eu.ssl-images-amazon.com/images/G/42/Egypt-hq/2022/img/Consumer_Electronics/BAU/xcm_banners_186x116-zu7b8-5oc5y_372x232_eg-ar._SY116_CB630519313_.jpg",
             price:39,
             currency:'EGP'
         },
         {
             id :1,
-            name: 'Raw African Pinacolada Shower Gel,500ml',
-            src:"https://m.media-amazon.com/images/I/41KWBWGP0WL._AC_UL320_.jpg",
+            name: 'Monitors',
+            src: "https://images-eu.ssl-images-amazon.com/images/G/42/Egypt-hq/2022/img/Consumer_Electronics/BAU/xcm_banners_186x116-zu7b8-1zcv3-9a69m_372x232_eg-ar._SY116_CB630519533_.jpg",
             price:80,
-            currency:'EGP'
-        },
-        {
-            id :2,
-            name: 'NIVEA MEN DEEP Shower Gel 3in1, Micro-Fine Clay, Woody Scent, 250ml',
-            src:"https://m.media-amazon.com/images/I/71jOFbwquUL._AC_UL320_.jpg",
-            price:29,
-            currency:'EGP'
-        },
-        {
-            id :3,
-            name: 'Shower Gel Twist Berry 500 ML',
-            src:"https://m.media-amazon.com/images/I/51Ay1BVQXkL._AC_UL320_.jpg",
-            price:29,
             currency:'EGP'
         }
     ]  
@@ -62,4 +47,12 @@ const makeItmes = () =>{
 
 
 const body = document.querySelector('body');
-body.onload = makeItmes()
+body.onload = () => {
+    makeItmes()
+    header = document.querySelector('nav');
+    header.style ='opacity: 1;visibility: visible;'
+    mainContainer = document.querySelector('.main-container');
+    mainContainer.style ='opacity: 1;visibility: visible;'
+    footer =  document.querySelector('footer');
+    footer.style ='opacity: 1;visibility: visible;'
+}
