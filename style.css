@@ -103,7 +103,7 @@ body{
     background-color: white;
     align-items:center;
     width: auto;
-    height: 786px;
+    height: auto;
     margin: auto;
     margin: 20px auto 20px auto ;
 
@@ -140,6 +140,11 @@ body{
     }
 }
 
+@media (max-width: 420px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+}
 
 footer{
     display: block;
