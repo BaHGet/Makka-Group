@@ -8,11 +8,11 @@ body{
 
 .header{
     position: sticky;
-    background-color: #e7e4e4;
+    background-color: #f83838;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 0.5px;
+    top: 0px;
     height:auto;
     margin: 0;
     margin-bottom: 30px;
@@ -42,14 +42,20 @@ body{
 }
 
 .dropbtn {
-    background-color: #000000;
+    background-color:transparent;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50px;
+    width: 60px;
+    height: 60px;
     color: white;
     padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     font-family: 'Noto Nastaliq Urdu', serif;
-    transition-property:background-color, color ;
+    transition-property:box-shadow ;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
 }
@@ -82,8 +88,7 @@ body{
     display: block;
 }
 .dropdown:hover .dropbtn {
-    background-color: #adacac;
-    color: black;
+    box-shadow: 0px 0px 10px #960606;
 }
 
 
@@ -170,11 +175,12 @@ footer{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #ffffff;
-    background-image: url("https://static.thenounproject.com/png/1256404-200.png");
+    background-color: transparent;
+    background-image: url("./images/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:80px;
+    background-position-x: 3px;
     transition-property:box-shadow ;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
@@ -203,11 +209,12 @@ footer{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #ffffff;
-    background-image: url("https://static.thenounproject.com/png/1256404-200.png");
+    background-color: transparent;
+    background-image: url("./images/arrow.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:80px;
+    background-position-x: 3px;
     transition-property:box-shadow ;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
@@ -216,14 +223,17 @@ footer{
 
 
 .left-page-btn a:hover{
-    rotate: 180deg;
     box-shadow: 0px 0px 10px;
 }
 
 /* Scrollbar behavior */
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
 }
 ::-webkit-scrollbar {
-    background: transparent;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
 }
