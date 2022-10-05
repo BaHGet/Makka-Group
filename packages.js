@@ -1,4 +1,4 @@
-let header;
+/* let header;
 let mainContainer;
 let footer;
 const itemsDb = 
@@ -55,4 +55,4 @@ body.onload = () => {
     mainContainer.style ='opacity: 1;visibility: visible;'
     footer =  document.querySelector('footer');
     footer.style ='opacity: 1;visibility: visible;'
-}
+} */
