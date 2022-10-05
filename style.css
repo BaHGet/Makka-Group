@@ -289,6 +289,9 @@ i.egyflag{
         height: 50px;
         background-size:50px;
     }
+    i.egyflag{
+        margin-top:0px;
+    }
 }
 
 /* Scrollbar behavior */
