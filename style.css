@@ -34,7 +34,6 @@ body{
     font-size: 26px;
     font-family: 'Noto Nastaliq Urdu', serif;
 }
-
 .logo-text::after{
     content: 'للمنظفات الصناعية';
     position: relative;
@@ -91,7 +90,6 @@ body{
     box-shadow: 0px 0px 10px #960606;
 }
 
-
 .main-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -102,8 +100,6 @@ body{
     will-change: opacity, visibility;
 }
 
-
-
 .item{
     background-color: white;
     align-items:center;
@@ -113,21 +109,18 @@ body{
     margin: 20px auto 20px auto ;
 
 }
-
 .item-image{
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
 }
-
 .item-name{
     text-align: center;
     overflow: hidden;
     margin-left:auto;
     font-size: 46px;
 }
-
 .item-price{
     text-align: center;
     overflow: hidden;
@@ -144,7 +137,6 @@ body{
         font-size: 26px;
     }
 }
-
 @media (max-width: 420px) {
     .main-container{
         grid-template-columns: 1fr;
@@ -152,13 +144,39 @@ body{
 }
 
 footer{
-    display: block;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
     background-color:black;
-    height:100px;
+    color:white;
+    padding: 0px 20px 0px 20px;
+    height:auto;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease-out;
     will-change: opacity, visibility;
+}
+
+.footer-text{
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.emg{
+    margin-right:19px;
+}
+
+i.egyflag{
+    position: absolute;
+    background-color:transparent;
+    background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/322/flag-egypt_1f1ea-1f1ec.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:20px;
+    width:20px;
+    height: 20px;
+    margin-left:5px;
+    margin-top:3px;
 }
 
 .right-page-btn{
@@ -169,7 +187,6 @@ footer{
     top: 454px;
     z-index: 999;
 }
-
 .right-page-btn a {
     display: block;
     width: 80px;
@@ -186,12 +203,9 @@ footer{
     transition-timing-function: ease-in-out;
 
 }
-
-
 .right-page-btn a:hover{
     box-shadow: 0px 0px 10px;
 }
-
 
 .left-page-btn{
     width: auto;
@@ -201,8 +215,6 @@ footer{
     top: 454px;
     z-index: 999;
 }
-
-
 .left-page-btn a {
     rotate: 180deg;
     display: block;
@@ -219,6 +231,9 @@ footer{
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
 
+}
+.left-page-btn a:hover{
+    box-shadow: 0px 0px 10px;
 }
 
 @media (max-width: 1080px){
@@ -252,11 +267,6 @@ footer{
         height: 50px;
         background-size:50px;
     }
-}
-
-
-.left-page-btn a:hover{
-    box-shadow: 0px 0px 10px;
 }
 
 /* Scrollbar behavior */

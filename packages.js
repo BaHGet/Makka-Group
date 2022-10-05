@@ -53,6 +53,6 @@ body.onload = () => {
     header.style ='opacity: 1;visibility: visible;'
     mainContainer = document.querySelector('.main-container');
     mainContainer.style ='opacity: 1;visibility: visible;'
-    /* footer =  document.querySelector('footer');
-    footer.style ='opacity: 1;visibility: visible;' */
+    footer =  document.querySelector('footer');
+    footer.style ='opacity: 1;visibility: visible;'
 }
