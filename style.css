@@ -6,9 +6,10 @@ body{
     background-attachment: scroll;
 }
 
+/* Header styling */
 .header{
     position: sticky;
-    background-color: #f83838;
+    background-color: #00bff0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -27,6 +28,7 @@ body{
     height:86px;
 }
 
+/* Makka logo */
 .logo-text{
     display: inline-block;
     padding: 0px 26px 0px 0px ;
@@ -40,14 +42,15 @@ body{
     font-size: 20px;
 }
 
+/* 3 lines styling */
 .dropbtn {
     background-color:transparent;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:50px;
-    width: 60px;
-    height: 60px;
+    background-size:70px;
+    width: 70px;
+    height: 70px;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -57,6 +60,7 @@ body{
     transition-property:box-shadow ;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+
 }
 .dropdown {
     position: relative;
@@ -90,6 +94,7 @@ body{
     box-shadow: 0px 0px 10px #960606;
 }
 
+/* div that contains the products */
 .main-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -100,6 +105,7 @@ body{
     will-change: opacity, visibility;
 }
 
+/* Products div  */
 .item{
     background-color: white;
     align-items:center;
@@ -132,23 +138,13 @@ body{
     font-size: 10px;
 }
 
-@media (max-width: 700px) {
-    .item-name{
-        font-size: 26px;
-    }
-}
-@media (max-width: 420px) {
-    .main-container{
-        grid-template-columns: 1fr;
-    }
-}
-
+/* Footer styling */
 footer{
     display: flex;
     position: sticky;
     justify-content: space-between;
     background-color:black;
-    color:white;
+    color:#cac9c9;
     padding: 0px 20px 0px 20px;
     height:auto;
     text-align: center;
@@ -161,7 +157,7 @@ footer{
     font-family: sans-serif;
     font-weight: 300;
 }
-.emg{
+.footer-text-right{
     margin-right:19px;
 }
 i.egyflag{
@@ -176,14 +172,8 @@ i.egyflag{
     margin-left:5px;
     margin-top:3px;
 }
-@media (max-width: 1080px){
-    footer{
-        flex-direction: column;
-        font-size: 11px;
-    }
-}
 
-
+/* right side button */
 .right-page-btn{
     width: 100px;
     height: 100px;
@@ -212,6 +202,7 @@ i.egyflag{
     box-shadow: 0px 0px 10px;
 }
 
+/* left side button */
 .left-page-btn{
     width: auto;
     height: auto;
@@ -241,7 +232,33 @@ i.egyflag{
     box-shadow: 0px 0px 10px;
 }
 
+/* Media queries for phones */
+@media (max-width: 700px) {
+    .item-name{
+        font-size: 26px;
+    }
+}
+@media (max-width: 420px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 1080px){
+    .header-logo{
+        width: 70px;
+        height:46px;
+    }
+    .dropbtn {
+        background-size:29px;
+        width: 29px;
+        height: 29px;
+    }
+
+    footer{
+        flex-direction: column;
+        font-size: 11px;
+    }
+
     .left-page-btn{
         width: 50px;
         height: 50px;
