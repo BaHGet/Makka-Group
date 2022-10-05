@@ -194,8 +194,8 @@ footer{
 
 
 .left-page-btn{
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     position: fixed;
     left: 3px;
     top: 454px;
@@ -219,6 +219,39 @@ footer{
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
 
+}
+
+@media (max-width: 420px){
+    .left-page-btn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        left: 3px;
+        top: 755px;
+        z-index: 999;
+    }
+    .left-page-btn a {
+        rotate: 180deg;
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-size:50px;
+    }
+
+    .right-page-btn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 3px;
+        top: 755px;
+        z-index: 999;
+    }
+    .right-page-btn a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-size:50px;
+    }
 }
 
 
